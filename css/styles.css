@@ -744,13 +744,11 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 .check-element {
   width: 16px;
+  margin-right: 8px;
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
