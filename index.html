@@ -475,10 +475,10 @@
               <p class="footer-text">Subscribe</p>
               <form class="footer-form">
                 
-                <label for="footer-email">
+                <label  class="footer-input-name" for="footer-email">
             
-            <input  class="footer-email" type="email" name="footer-email" id="footer-email" placeholder="E-mail"></label>
-            <button class="footer-submit-btn" type="submit">Subscribe <svg class="" width="24" height="24">
+            <input  class="footer-input-email" type="email" name="footer-email" id="footer-email" placeholder="E-mail"></label>
+            <button class="footer-submit-btn" type="submit">Subscribe <svg class="footer-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-airplane"></use>
             </svg></button>
           </form>
@@ -490,7 +490,7 @@
 
     <!-- =========== MODAL =============== -->
 
-    <div class="backdrop ">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-btn-close">
           <svg class="btn-close-img" width="8" height="8">
@@ -542,23 +542,25 @@
               name="user-comment"
             ></textarea>
           </div>
+
           <div class="modal-field">
             <input
               type="checkbox"
-              name="policy"
-              id="policy"
+              name="user-privacy"
+              id="user-privacy"
               class="modal-check visually-hidden"
-              value="agree"
+              value="true"
             />
-            <label for="policy" class="check-text">
+            <label for="user-privacy" class="check-text">
               <span class="check-element"><svg class="" width="10" height="8">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg></span>I accept the terms and conditions of the
-              <a class="check-list" href="">Privacy Policy</a></label
+              <a class="check-link" href="">Privacy Policy</a></label
             ></label>
           </div>
+          <button class="modal-btn-submit" type="submit">Send</button>
         </form>
-        <button class="modal-btn-submit" type="submit">Send</button>
+        
       </div>
     </div>
   </body>
